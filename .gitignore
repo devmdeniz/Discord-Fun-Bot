@@ -1,0 +1,3 @@
+*.sqlite
+secret.json
+settings.json
