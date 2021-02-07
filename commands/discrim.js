@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const settings = require('../settings.json');
    
 exports.run = function(client, msg) {
   
@@ -10,7 +9,7 @@ exports.run = function(client, msg) {
    if (typeof discrim !== '')
    if (discrim.size < 4 || discrim.size > 4) return msg.channel.send(" **Discrim must be have 4 number**")
      let members = client.users.filter(c=>c.discriminator===discrim).map(c=>c.username).join('\n')
-     if (!members) return msg.channel.send(`${hata}` + "There is no one with this discrim on the server I am on")
+     if (!members) return msg.channel.send("There is no one with this discrim on the server I am on")
    let embed = new Discord.RichEmbed()
      .setTitle("Discrim")
      .setDescription('#' + `${discrim}` + "**Users**")
