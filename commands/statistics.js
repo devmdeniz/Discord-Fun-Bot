@@ -3,7 +3,7 @@ const moment = require("moment");
 require("moment-duration-format");
 const client = new Discord.Client()
 const fs = require('fs');
-const settings = require('../ayarlar.json')
+const settings = require('../settings.json')
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();

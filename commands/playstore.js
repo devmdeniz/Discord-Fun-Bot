@@ -12,7 +12,7 @@ exports.run = function(client, message, args) {
                 gplay.search({
                 lang: 'en',
                 term: uyg,
-                country: 'en',
+                country: 'us',
                 fullDetail: true
                  
            
